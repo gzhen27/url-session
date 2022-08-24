@@ -21,6 +21,7 @@ let imageTask = URLSession.shared.dataTask(with: imageUrl) { imageData, res, err
     }
     
     guard let res = res as? HTTPURLResponse, (200...299).contains(res.statusCode) else {
+        /// please properly handles the errors based on the status code.
         print("Server Error: Please try again later!")
         return
     }

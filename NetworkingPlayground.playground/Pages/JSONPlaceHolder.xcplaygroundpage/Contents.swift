@@ -8,7 +8,7 @@ PlaygroundPage.current.needsIndefiniteExecution = true
 let url = URL(string: "https://jsonplaceholder.typicode.com/posts")!
 
 struct JSONObject: Codable {
-    let userId: Int
+//    let userId: Int
     let id: Int
     let title: String
     let body: String
